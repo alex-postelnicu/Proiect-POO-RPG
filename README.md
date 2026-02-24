@@ -46,7 +46,8 @@ Nerespectarea duce la nepunctarea proiectului
   - lipsa separarea implementarii de definitie
 
 ## Cerințe
-- [ ] definirea a minim **2-3 ieararhii de clase** care sa interactioneze in cadrul temei alese (fie prin compunere, agregare sau doar sa apeleze metodele celeilalte intr-un mod logic) (6p)
+- pentru fiecare cerință (sau subcerință) neîndeplinită se scade **1** punct
+- [ ] definirea a minim **2-3 ieararhii de clase** care sa interactioneze in cadrul temei alese (fie prin compunere, agregare sau doar sa apeleze metodele celeilalte intr-un mod logic)
   - minim o clasa cu:
     - [ ] constructori de inițializare [*](https://github.com/Ionnier/poo/tree/main/labs/L02#crearea-obiectelor)
     - [ ] constructor supraîncărcat [*](https://github.com/Ionnier/poo/tree/main/labs/L02#supra%C3%AEnc%C4%83rcarea-func%C8%9Biilor)
@@ -67,24 +68,24 @@ Nerespectarea duce la nepunctarea proiectului
   - pentru celelalte clase se va definii doar ce e nevoie
   - minim o ierarhie mai dezvoltata (cu 2-3 clase dintr-o clasa de baza)
   - ierarhie de clasa se considera si daca exista doar o clasa de bază însă care nu moștenește dintr-o clasă din altă ierarhie
-- [ ] cât mai multe `const` [(0.25p)](https://github.com/Ionnier/poo/tree/main/labs/L04#reminder-const-everywhere)
-- [ ] funcții și atribute `static` (în clase) [0.5p](https://github.com/Ionnier/poo/tree/main/labs/L04#static)
+- [ ] cât mai multe `const` [*](https://github.com/Ionnier/poo/tree/main/labs/L04#reminder-const-everywhere)
+- [ ] funcții și atribute `static` (în clase) [*](https://github.com/Ionnier/poo/tree/main/labs/L04#static)
   - [ ] 1+ atribute statice non-triviale 
   - [ ] 1+ funcții statice non-triviale
-- [ ] excepții [0.5p](https://github.com/Ionnier/poo/tree/main/labs/L04#exception-handling)
+- [ ] excepții [*](https://github.com/Ionnier/poo/tree/main/labs/L04#exception-handling)
   - porniți de la `std::exception`
   - ilustrați propagarea excepțiilor
   - ilustrati upcasting-ul în blocurile catch
   - minim folosit într-un loc în care tratarea erorilor în modurile clasice este mai dificilă
-- [ ] folosirea unei clase abstracte [(0.25p)](https://github.com/Ionnier/poo/tree/main/labs/L04#clase-abstracte)
- - [ ] clase template
-   - [ ] crearea unei clase template [(1p)](https://github.com/Ionnier/poo/tree/main/labs/L08)
-   - [ ] 2 instanțieri ale acestei clase (0.5p)
- - STL [(0.25p)](https://github.com/Ionnier/poo/tree/main/labs/L07#stl)
-   - [ ] utilizarea a două structuri (containere) diferite (vector, list sau orice alt container care e mai mult sau mai putin un array)
-   - [ ] utilizarea a unui algoritm cu funcție lambda (de exemplu, sort, transform)
- - Design Patterns [(0.75p)](https://github.com/Ionnier/poo/tree/main/labs/L08)
-   - [ ] utilizarea a două șabloane de proiectare
+- [ ] folosirea unei clase abstracte [*](https://github.com/Ionnier/poo/tree/main/labs/L04#clase-abstracte)
+- [ ] clase template
+  - [ ] crearea unei clase template [*](https://github.com/Ionnier/poo/tree/main/labs/L08)
+  - [ ] 2 instanțieri ale acestei clase
+- [ ] STL [*](https://github.com/Ionnier/poo/tree/main/labs/L07#stl)
+  - [ ] utilizarea a două structuri (containere) diferite (vector, list sau orice alt container care e mai mult sau mai putin un array)
+  - [ ] utilizarea a unui algoritm cu funcție lambda (de exemplu, sort, transform)
+-  [ ] Design Patterns [*](https://github.com/Ionnier/poo/tree/main/labs/L08)
+  - [ ] utilizarea a două șabloane de proiectare
 
 ### Observații
 
