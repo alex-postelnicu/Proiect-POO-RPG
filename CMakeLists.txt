@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.26)
 # NOTE: update executable name in .github/workflows/cmake.yml:25 when changing executable name in this file
 # for now, the project name is used as the executable name
 set(MAIN_PROJECT_NAME "GET_A_JOB")
-set(MAIN_EXECUTABLE_NAME "${MAIN_PROJECT_NAME}")
+set(MAIN_EXECUTABLE_NAME "oop")
 
 
 project(${MAIN_PROJECT_NAME})
