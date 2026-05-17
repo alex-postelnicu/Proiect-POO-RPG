@@ -18,7 +18,7 @@ private:
     Inventory<Item*>inv;
 
 public:
-    Player(string name, int hp, int dmg);
+    Player(const string& name, int hp, int dmg);
     Player();
 
     void take_item(Item* i); //add in inv

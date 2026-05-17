@@ -6,7 +6,7 @@
 
 using namespace std;
 
-Enemy::Enemy(string name, int hp, int dmg) : Entity(name, hp, dmg) {}
+Enemy::Enemy(const string& name, int hp, int dmg) : Entity(name, hp, dmg) {}
 
 Enemy::Enemy() : Entity() {}
 

@@ -114,7 +114,7 @@ bool Entity::getdefending() const
     return defending;
 }
 
-string Entity::getname() const
+const string& Entity::getname() const
 {
     return name;
 }

@@ -12,7 +12,7 @@ using namespace std;
 class Enemy : public Entity
 {
 public:
-    Enemy(string name, int hp, int dmg);
+    Enemy(const string& name, int hp, int dmg);
     Enemy();
     Enemy(const Enemy& e);
 

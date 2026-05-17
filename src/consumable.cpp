@@ -7,7 +7,7 @@
 
 using namespace std;
 
-Consumable::Consumable(string name, int heal) : Item(name), heal(heal) {}
+Consumable::Consumable(const string& name, int heal) : Item(name), heal(heal) {}
 
 bool Consumable::isconsumable() const
 {

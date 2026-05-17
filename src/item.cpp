@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Item::Item(string name) : name(name) {}
+Item::Item(const string& name) : name(name) {}
 
 Item::~Item() {}
 
@@ -14,7 +14,7 @@ bool Item::isconsumable() const
     return false;
 }
 
-string Item::getname() const
+const string& Item::getname() const
 {
     return name;
 }

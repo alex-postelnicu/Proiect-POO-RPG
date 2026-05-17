@@ -7,7 +7,7 @@
 
 using namespace std;
 
-Weapon::Weapon(string name, int weapondmg) : Item(name), weapondmg(weapondmg) {}
+Weapon::Weapon(const string& name, int weapondmg) : Item(name), weapondmg(weapondmg) {}
 
 void Weapon::use(Entity& e)
 {
@@ -16,9 +16,4 @@ void Weapon::use(Entity& e)
     string s="You equipped "+name+". DMG increased by "+to_string(weapondmg)+".";
     writetext(s);
     cout<<WHITE;
-}
-
-int Weapon::getweapondmg() const
-{
-    return weapondmg;
 }

@@ -30,7 +30,7 @@ public:
     void stopdefending();
     bool alive() const;
     bool getdefending() const;
-    string getname() const;
+    const string& getname() const;
     int gethp() const;
     int getmaxhp() const;
     int getdmg() const;

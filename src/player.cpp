@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Player::Player(string name, int hp, int dmg) : Entity(name, hp, dmg), inv() {}
+Player::Player(const string& name, int hp, int dmg) : Entity(name, hp, dmg), inv() {}
 
 Player::Player() : Entity() {}
 

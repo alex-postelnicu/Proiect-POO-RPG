@@ -14,12 +14,12 @@ protected:
     string name;
 
 public:
-    Item(string name);
+    Item(const string& name);
     virtual ~Item();
 
     virtual bool isconsumable() const;
     virtual void use(Entity& e)=0;
-    string getname() const;
+    const string& getname() const;
 
 };
 
