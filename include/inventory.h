@@ -31,7 +31,7 @@ public:
 
     void add(T obj)
     {
-        if (objects.size()<mx)
+        if ((int)objects.size()<mx)
         {
             objects.push_back(obj);
         }
@@ -43,7 +43,7 @@ public:
 
     T get(int i)
     {
-        if (i>=0 && i<objects.size())
+        if (i>=0 && i<(int)objects.size())
         {
             return objects[i];
         }
@@ -75,7 +75,7 @@ public:
 
     void del(int i)
     {
-        if (i>=0 && i<objects.size())
+        if (i>=0 && i<(int)objects.size())
         {
             delete objects[i];
             objects.erase(objects.begin()+i);
