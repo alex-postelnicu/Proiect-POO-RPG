@@ -19,7 +19,7 @@ private:
 public:
     Weapon(string name, int weapondmg);
 
-    void use(Entity& e);
+    void use(Entity& e) override;
     int getweapondmg() const;
 
 };

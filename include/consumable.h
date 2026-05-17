@@ -18,7 +18,7 @@ public:
     Consumable(string name, int heal);
 
     bool isconsumable() const override;
-    void use(Entity& e);
+    void use(Entity& e) override;
 };
 
 #endif

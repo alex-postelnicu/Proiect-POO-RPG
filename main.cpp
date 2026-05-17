@@ -24,7 +24,7 @@ int main()
     Enemy_Factory factory;
 
     int option;
-    bool ok,win;
+    bool ok,win,ok2;
     
     ok=false;
     while (!ok)
@@ -40,8 +40,8 @@ int main()
                 //start game
                 writetext("The alarm buzzes. It's 10 AM. You stare at the ceiling, feeling a sharp twist of dread in your stomach. Today isn't just another monotonous day. Afer dozens of ignored and rejected applications at other jobs, today is your interview for a post at the cinema. You need to get out of your house but the world feels judgemental and terrifying.");
                 cout<<"\n";
-                ok=false;
-                while (!ok)
+                ok2=false;
+                while (!ok2)
                 {
                     writetext("How will you start your day?");
                     cout<<"\n";
@@ -53,7 +53,7 @@ int main()
                     {
                         case 1:
                         {
-                            ok=true;
+                            ok2=true;
                             writetext("Your screen is empty, no messages. You take your phone with you.");
                             cout<<"\n";
                             writetext("Obtained [Phone] (Weapon, +7 DMG)");
@@ -64,7 +64,7 @@ int main()
 
                         case 2:
                         {
-                            ok=true;
+                            ok2=true;
                             writetext("You stare at the ceiling and think about what could possibly happen today. You decide to write your thoughts in your journal.");
                             cout<<"\n";
                             writetext("Obtained [Personal Journal] (Weapon, +5 DMG)");
@@ -75,7 +75,7 @@ int main()
 
                         case 3:
                         {
-                            ok=true;
+                            ok2=true;
                             writetext("With a slight sense of motivation, you get out of bed. You look out the window and notice it's cloudy today. You take your umbrella in case it rains. You must be prepared for anything, especially today.");
                             cout<<"\n";
                             writetext("Obtained [Umbrella] (Weapon, +10 DMG)");

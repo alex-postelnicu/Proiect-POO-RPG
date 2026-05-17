@@ -21,7 +21,7 @@ private:
     string error_message;
 
 public:
-    InvalidItem(int i)
+    explicit InvalidItem(int i)
     {
         error_message="There isn't an item at ["+to_string(i)+"] . Choose a correct slot!";
     }

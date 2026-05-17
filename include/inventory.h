@@ -18,7 +18,7 @@ private:
     int mx;
 
 public:
-    Inventory(int mx=10) : mx(mx) {}
+    explicit Inventory(int mx=10) : mx(mx) {}
 
     ~Inventory()
     {
