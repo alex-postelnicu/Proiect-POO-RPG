@@ -1,0 +1,3 @@
+Barista 60 15
+Coach 85 20
+Manager 140 25
