@@ -7,6 +7,6 @@
 using namespace std;
 
 
-void writetext(const string& text, int speed=1);
+void writetext(const string& text, int speed=50);
 
 #endif

@@ -20,7 +20,7 @@ using namespace std;
 int main() 
 {
 
-    Player player("You", 100, 10);
+    Player player("You", 150, 10);
     Enemy_Factory factory;
 
     int option;
@@ -112,7 +112,7 @@ int main()
                                 cout<<RED;
                                 writetext("You let panic consume you. You turn around and flee home, not being strong enough to face the unknown...");
                                 cout<<"\n";
-                                writetext("GAME OVER");
+                                writetext("GAME OVER", 100);
                                 cout<<"\n";
                                 cout<<WHITE;
                                 cout<<"\n";
@@ -170,7 +170,7 @@ int main()
                                 cout<<RED;
                                 writetext("You let panic consume you. You turn around and flee home, not being strong enough to face the unknown...");
                                 cout<<"\n";
-                                writetext("GAME OVER");
+                                writetext("GAME OVER", 100);
                                 cout<<"\n";
                                 cout<<WHITE;
                                 cout<<"\n";
@@ -234,7 +234,7 @@ int main()
                                 cout<<RED;
                                 writetext("You let panic consume you. You turn around and flee home, not being strong enough to face the unknown...");
                                 cout<<"\n";
-                                writetext("GAME OVER");
+                                writetext("GAME OVER", 100);
                                 cout<<"\n";
                                 cout<<WHITE;
                                 cout<<"\n";
