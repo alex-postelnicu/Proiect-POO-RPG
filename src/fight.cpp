@@ -87,18 +87,17 @@ bool Fight::battle(Player& p, Enemy& e)
                             e.special(p);
                             writetext(e.getname()+" unleashes a desperate attack.");
                             cout<<RED;
-                            cout<<"(-"<<to_string(e.getdmg()*150/100)<<" HP"<<"\n";
+                            cout<<"(-"<<to_string(e.getdmg()*150/100)<<" HP)"<<"\n";
                             cout<<WHITE;
                         }
                         else
                         {
                             //normal attack
                             e.dodmg(p);
-                            mt19937 g(rd());
                             shuffle(message_takedmg.begin(), message_takedmg.end(), g);
                             writetext(message_takedmg.front());
                             cout<<RED;
-                            cout<<"(-"<<to_string(e.getdmg())<<" HP"<<"\n";
+                            cout<<"(-"<<to_string(e.getdmg())<<" HP)"<<"\n";
                             cout<<WHITE;
                         }
                     }
@@ -124,18 +123,17 @@ bool Fight::battle(Player& p, Enemy& e)
                         e.special(p);
                         writetext(e.getname()+" unleashes a powerful attack.");
                         cout<<RED;
-                        cout<<"(-"<<to_string(e.getdmg()*150/100)<<" HP"<<"\n";
+                        cout<<"(-"<<to_string(e.getdmg()*150/200)<<" HP)"<<"\n";
                         cout<<WHITE;
                     }
                     else
                     {
                         //normal attack
                         e.dodmg(p);
-                        mt19937 g(rd());
                         shuffle(message_takedmg.begin(), message_takedmg.end(), g);
                         writetext(message_takedmg.front());
                         cout<<RED;
-                        cout<<"(-"<<to_string(e.getdmg())<<" HP"<<"\n";
+                        cout<<"(-"<<to_string(e.getdmg()/2)<<" HP)"<<"\n";
                         cout<<WHITE;
                     }
                     break;

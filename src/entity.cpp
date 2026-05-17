@@ -26,12 +26,11 @@ ostream& operator<<(ostream& os, const Entity& e) //stats
     os<<CYAN;
     writetext("--- "+e.name+" ---");
     os<<WHITE;
-    os<<"\n";
     os<<RED;
     os<<"HP:  "<<e.hp<<" / "<<e.maxhp<<"\n";
     os<<WHITE;
     os<<YELLOW;
-    os<<"DMG: "<<e.dmg<<"\n";
+    os<<"DMG: "<<e.dmg<<"\n\n";
     os<<WHITE;
     return os;
 }
@@ -49,6 +48,7 @@ Entity& Entity::operator=(const Entity& other)
     this->hp=other.hp;
     this->maxhp=other.maxhp;
     this->dmg=other.dmg;
+    this->bonusdmg=other.bonusdmg;
     return *this;
 }
 

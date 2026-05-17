@@ -21,10 +21,7 @@ private:
     string error_message;
 
 public:
-    explicit InvalidItem(int i)
-    {
-        error_message="There isn't an item at ["+to_string(i)+"] . Choose a correct slot!";
-    }
+    explicit InvalidItem(int i) : error_message("There isn't an item at ["+to_string(i)+"] . Choose a correct slot!") {}
 
     const char* what() const noexcept override
     {
