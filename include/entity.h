@@ -9,8 +9,9 @@ class Entity
 {
 protected:
     string name;
-    int hp,maxhp,dmg,bonusdmg=0;
+    int hp,maxhp,dmg,bonusdmg=0,poisonturn=0,poisondmg=0;
     bool defending=false;
+    bool stunned=false;
 
 public:
     Entity(string name, int hp, int dmg);
@@ -28,8 +29,14 @@ public:
     virtual void special(Entity& target);
     void startdefending();
     void stopdefending();
+    void apply_poison(int turns, int pdmg);
+    int do_poison_dmg();
+    void apply_stun();
+    void clear_stun();
     bool alive() const;
     bool getdefending() const;
+    bool getstunned() const;
+    bool getpoisoned() const;
     const string& getname() const;
     int gethp() const;
     int getmaxhp() const;

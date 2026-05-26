@@ -10,8 +10,9 @@ Enemy* Enemy_Factory::create_enemy(const string& search_name)
 {
     ifstream fin("enemies.txt");
     if (!fin.is_open())
-    {cout<<"NU MERGE";
-    return new Enemy();}
+    {
+        return new Enemy();
+    }
     Enemy aux;
     while (fin>>aux)
     {

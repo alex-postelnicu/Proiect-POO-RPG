@@ -92,6 +92,36 @@ void Entity::stopdefending()
     defending=false;
 }
 
+void Entity::apply_poison(int turns, int pdmg)
+{
+    poisonturn=turns;
+    poisondmg=pdmg;
+}
+
+int Entity::do_poison_dmg()
+{
+    if (poisonturn>0)
+    {
+        takedmg(poisondmg);
+        poisonturn--;
+        return poisondmg;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+void Entity::apply_stun()
+{
+    stunned=true;
+}
+
+void Entity::clear_stun()
+{
+    stunned=false;
+}
+
 void Entity::special(Entity& target)
 {
     target.takedmg(dmg*150/100);
@@ -112,6 +142,23 @@ bool Entity::alive() const
 bool Entity::getdefending() const
 {
     return defending;
+}
+
+bool Entity::getstunned() const
+{
+    return stunned;
+}
+
+bool Entity::getpoisoned() const
+{
+    if (poisonturn>0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 const string& Entity::getname() const

@@ -8,12 +8,43 @@
 using namespace std;
 
 
-void writetext(const string& text, int speed)
+void writetext(const string& text, int speed,int mx)
 {
-    for (char c : text)
+    int i=0,start=0,sfarsit,l;
+    while (i<(int) text.size())
     {
-        cout<<c;
-        this_thread::sleep_for(chrono::milliseconds(speed));
+        sfarsit=i;
+        while (sfarsit<(int) text.size() && text[sfarsit]!=' ' && text[sfarsit]!='\n')
+        {
+            sfarsit++;
+        }
+        l=sfarsit-i;
+        if (start+l>mx && start>0)
+        {
+            cout<<"\n";
+            start=0;
+        }
+        while (i<sfarsit)
+        {
+            cout<<text[i];
+            start++;
+            i++;
+            this_thread::sleep_for(chrono::milliseconds(speed));
+        }
+        while (i<(int) text.size() && (text[i]==' ' || text[i]=='\n'))
+        {
+            cout<<text[i];
+            if (text[i]=='\n')
+            {
+                start=0;
+            }
+            else
+            {
+                start++;
+            }
+            i++;
+            this_thread::sleep_for(chrono::milliseconds(speed));
+        }
     }
     cout<<"\n";
 }

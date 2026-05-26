@@ -1,3 +1,6 @@
+#ifndef GAME_H
+#define GAME_H
+
 #include "colors.h"
 #include "consumable.h"
 #include "enemy_factory.h"
@@ -10,7 +13,6 @@
 #include "player.h"
 #include "text.h"
 #include "weapon.h"
-#include "game.h"
 
 #include <iostream>
 #include <fstream>
@@ -18,9 +20,6 @@
 
 using namespace std;
 
-int main() 
-{
-    playgame();
-    
-    return 0;
-}
+void playgame();
+
+#endif

@@ -24,7 +24,6 @@ public:
     void take_item(Item* i); //add in inv
     void use_item(int i);
     void open_inv();
-
 };
 
 #endif
