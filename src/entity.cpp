@@ -49,6 +49,8 @@ Entity& Entity::operator=(const Entity& other)
     this->maxhp=other.maxhp;
     this->dmg=other.dmg;
     this->bonusdmg=other.bonusdmg;
+    this->poisonturn=other.poisonturn;
+    this->poisondmg=other.poisondmg;
     return *this;
 }
 

@@ -10,15 +10,15 @@ using namespace std;
 
 void writetext(const string& text, int speed,int mx)
 {
-    int i=0,start=0,sfarsit,l;
+    int i=0,start=0;
     while (i<(int) text.size())
     {
-        sfarsit=i;
+        int sfarsit=i;
         while (sfarsit<(int) text.size() && text[sfarsit]!=' ' && text[sfarsit]!='\n')
         {
             sfarsit++;
         }
-        l=sfarsit-i;
+        int l=sfarsit-i;
         if (start+l>mx && start>0)
         {
             cout<<"\n";

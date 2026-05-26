@@ -19,7 +19,7 @@ public:
     Enemy(const string& name, int hp, int dmg);
     Enemy();
     Enemy(const Enemy& e);
-    ~Enemy();
+    ~Enemy() override;
 
     Item* steal();
     void setloot(Item* i);
